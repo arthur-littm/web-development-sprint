@@ -37,6 +37,7 @@ a:hover {
   width: 800px;
   margin: auto;
 }
+
 .banner {
   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
   background-size: cover;
@@ -82,7 +83,8 @@ body {
   width: 200px;
   text-align: center;
   padding: 24px;
-  /*margin: 24px 0;*/
+  margin: 8px;
+  flex-grow: 1;
 }
 
 
@@ -110,8 +112,26 @@ body {
 .cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-bottom: 24px;
 }
 
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
 
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
 
